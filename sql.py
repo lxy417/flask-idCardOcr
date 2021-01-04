@@ -2,7 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 import pymysql
 from  flask import Flask
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:chenchen417@101.200.221.167:3306/test"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:root@127.0.0.1:3306/test"
 # 动态追踪修改设置，如未设置只会提示警告
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 # app.config['SECRET_KEY']='123456'
